@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>先锋网络中心硬件部</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('index') }}">首页</a></li>
+                <li><a href="{{ url_for('services') }}">服务项目</a></li>
+                <li><a href="{{ url_for('about') }}">关于我们</a></li>
+                <li><a href="{{ url_for('appointment') }}">预约服务</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>欢迎来到先锋网络中心硬件部</h1>
+            <p>我们提供专业的电脑维修、系统重装和数据恢复服务</p>
+            <a href="{{ url_for('appointment') }}" class="cta-button">立即预约</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 先锋网络中心硬件部. 保留所有权利。</p>
+    </footer>
+</body>
+</html>

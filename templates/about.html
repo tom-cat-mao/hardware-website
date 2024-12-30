@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于我们 - 先锋网络中心硬件部</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('index') }}">首页</a></li>
+                <li><a href="{{ url_for('services') }}">服务项目</a></li>
+                <li><a href="{{ url_for('about') }}">关于我们</a></li>
+                <li><a href="{{ url_for('appointment') }}">预约服务</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>关于我们</h1>
+        
+        <section class="about-section">
+            <h2>组织简介</h2>
+            <p>先锋网络中心硬件部成立于2010年，致力于为校园师生提供专业的计算机硬件维护和技术支持服务。我们拥有一支经验丰富的技术团队，在电脑维修、系统重装和数据恢复等领域有着丰富的实践经验。</p>
+        </section>
+
+        <section class="about-section">
+            <h2>我们的团队</h2>
+            <div class="team-members">
+                <div class="member">
+                    <h3>张三</h3>
+                    <p>技术总监，10年硬件维修经验</p>
+                </div>
+                <div class="member">
+                    <h3>李四</h3>
+                    <p>数据恢复专家，精通各种存储设备</p>
+                </div>
+                <div class="member">
+                    <h3>王五</h3>
+                    <p>系统工程师，擅长各类操作系统安装与优化</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="cta-container">
+            <a href="{{ url_for('appointment') }}" class="cta-button">立即预约</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 先锋网络中心硬件部. 保留所有权利。</p>
+    </footer>
+</body>
+</html>

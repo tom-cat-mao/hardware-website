@@ -1,0 +1,11 @@
+blinker @ file:///croot/blinker_1696539051175/work
+click @ file:///croot/click_1698129812380/work
+Flask @ file:///croot/flask_1716545870149/work
+Flask-WTF @ file:///croot/flask-wtf_1716552105738/work
+importlib_metadata @ file:///croot/importlib_metadata-suite_1732633488278/work
+itsdangerous @ file:///croot/itsdangerous_1716533337253/work
+Jinja2 @ file:///croot/jinja2_1730902924303/work
+MarkupSafe @ file:///croot/markupsafe_1704205993651/work
+Werkzeug @ file:///croot/werkzeug_1731005776056/work
+WTForms @ file:///Users/ktietz/demo/mc3/conda-bld/wtforms_1629354749392/work
+zipp @ file:///croot/zipp_1732630741423/work

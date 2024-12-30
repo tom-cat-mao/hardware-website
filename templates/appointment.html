@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>预约服务 - 先锋网络中心硬件部</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('index') }}">首页</a></li>
+                <li><a href="{{ url_for('services') }}">服务项目</a></li>
+                <li><a href="{{ url_for('about') }}">关于我们</a></li>
+                <li><a href="{{ url_for('appointment') }}">预约服务</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>预约服务</h1>
+        
+        <form method="POST" class="appointment-form">
+            {{ form.hidden_tag() }}
+            
+            <div class="form-group">
+                {{ form.name.label }}
+                {{ form.name(class="form-control") }}
+            </div>
+
+            <div class="form-group">
+                {{ form.email.label }}
+                {{ form.email(class="form-control") }}
+            </div>
+
+            <div class="form-group">
+                {{ form.phone.label }}
+                {{ form.phone(class="form-control") }}
+            </div>
+
+            <div class="form-group">
+                {{ form.service.label }}
+                {{ form.service(class="form-control") }}
+            </div>
+
+            <div class="form-group">
+                {{ form.message.label }}
+                {{ form.message(class="form-control", rows=4) }}
+            </div>
+
+            <div class="form-group">
+                {{ form.submit(class="cta-button") }}
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 先锋网络中心硬件部. 保留所有权利。</p>
+    </footer>
+</body>
+</html>

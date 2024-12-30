@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>服务项目 - 先锋网络中心硬件部</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('index') }}">首页</a></li>
+                <li><a href="{{ url_for('services') }}">服务项目</a></li>
+                <li><a href="{{ url_for('about') }}">关于我们</a></li>
+                <li><a href="{{ url_for('appointment') }}">预约服务</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>我们的服务</h1>
+        
+        <section class="service">
+            <h2>电脑维修</h2>
+            <p>我们提供专业的电脑硬件维修服务，包括：</p>
+            <ul>
+                <li>主板检测与维修</li>
+                <li>电源更换</li>
+                <li>显卡维修</li>
+                <li>内存条更换</li>
+            </ul>
+        </section>
+
+        <section class="service">
+            <h2>系统重装</h2>
+            <p>快速、安全的系统重装服务：</p>
+            <ul>
+                <li>Windows系统安装</li>
+                <li>Linux系统安装</li>
+                <li>驱动程序安装</li>
+                <li>系统优化</li>
+            </ul>
+        </section>
+
+        <section class="service">
+            <h2>数据恢复</h2>
+            <p>专业的数据恢复服务，包括：</p>
+            <ul>
+                <li>硬盘数据恢复</li>
+                <li>U盘数据恢复</li>
+                <li>RAID数据恢复</li>
+                <li>误删除文件恢复</li>
+            </ul>
+        </section>
+
+        <div class="cta-container">
+            <a href="{{ url_for('appointment') }}" class="cta-button">立即预约</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 先锋网络中心硬件部. 保留所有权利。</p>
+    </footer>
+</body>
+</html>
